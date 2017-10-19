@@ -1,12 +1,27 @@
-<html>
-<head>
-<title>Creative Angular</title>
-</head>
-<header>
-
-</header>
-<body>
-
-
-</body>
+<!doctype html>
+<html ng-app="creative">
+  <head>
+    <title>First AngularJS App</title>
+  </head>
+  <body>
+    <div ng-controller="controlOne">
+      <span>What is your name?</span>
+      <input type="text" ng-model="one">
+      <button ng-click='start()' type='submit'>Submit</button>
+      <hr>
+      {{message}}
+        <button ng-click='answerYes()' ng-show='show'>Yes!</button>
+        <button ng-show='show' ng-click='answerNo()'>No</button>
+        <br>
+        {{reply}}
+        <br>
+        
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9bto_3Z1dqc?rel=0&amp;showinfo=0&amp;start=3?iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <input ng-show="show2" type="text" ng-model="letter">
+      </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="code.js"></script>
+  </body>
 </html>

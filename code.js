@@ -30,7 +30,7 @@ firstApp.controller('controlOne', function($scope) {
   $scope.submitAnswer = function() {
 	var compare = $scope.answer.toUpperCase();
  	if(compare == 'C'){
-		 $scope.finalMessage ='You Win!!';
+		 $scope.finalMessage ='Watch Video:';
 		 $scope.show2 = false;
 		 $scope.show4 = false;
 	   	 $scope.show5 = false;		
@@ -41,7 +41,7 @@ firstApp.controller('controlOne', function($scope) {
 
 	else if(compare == 'A'){
 
-		 $scope.finalMessage ='You Loose';
+        $scope.finalMessage ='Watch Video:';
   		$scope.show4 = true;
 		$scope.show3 = false;
 		$scope.show5 = false;
@@ -51,7 +51,7 @@ firstApp.controller('controlOne', function($scope) {
 
 	}
 	else if(compare == 'B'){
-		 $scope.finalMessage ='You Loose';
+		 $scope.finalMessage ='Watch Video:';
 		 $scope.show5 = true;
 		 $scope.show3 = false;
 		 $scope.show4 = false;
@@ -74,6 +74,7 @@ firstApp.controller('controlOne', function($scope) {
          $scope.show = true;
          $scope.show2 = true;
 		 $scope.lastButton = false;
+         $scope.answer = '';
 	
 	
 

@@ -3,19 +3,47 @@ html, body{
 }
 header{
     height:100px;
+    background-color: #2988bc;
 }
 footer{ 
-    height:50px; 
+    height:100px; 
+    background-color: #2988bc;
+    
 }
 
 
-/* Trick */
 body{ 
   display:flex; 
   flex-direction:column; 
+  background-color: #f3e5ab;
 }
 
 footer{
   margin-top:auto; 
 }
  
+#finalMessage {
+    font-weight: bold;
+  
+}
+#message {
+     
+}
+#who {
+    
+}
+h3{
+     color: white;
+    margin: 0;
+    padding: 0;
+}
+h1{
+     color: white;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}

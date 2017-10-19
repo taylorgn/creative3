@@ -4,21 +4,27 @@
     <title>Cup Game</title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
+    <header>
+        <center>
+            <br>
+        <h1>Welcome to the Cup Game!</h1>
+            <br>
+        </center>
+    </header>
   <body>
       
     <div ng-controller="controlOne">
         <center>
-      <span>What is your name?</span>
+      <span>Who are you?</span>
       <input type="text" ng-model="one">
       <button ng-click='start()' type='submit'>Submit</button>
-      <hr>
       {{message}}
         <button ng-click='answerYes()' ng-show='show'>Yes!</button>
         <button ng-show='show' ng-click='answerNo()'>No</button>
         <br>
         {{reply}}
         <br>
-        
+        <br>
         <iframe  ng-show="show2" width="560" height="315" src="https://www.youtube.com/embed/9bto_3Z1dqc?start=3&amp;&rel=0&amp;controls=0&amp;showinfo=0&amp;start=3&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
         <br>
 	<span ng-show="show2">Enter your selection here (A, B, or C):</span>
@@ -37,4 +43,14 @@
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="code.js"></script>
   </body>
+    <footer>
+        <br>
+        <br>
+        <center>
+    <h3>Thanks for Playing!</h3>
+        	<p>&#169; Taylor & Moises</p>
+        </center>
+        <br>
+        <br>
+    </footer>
 </html>

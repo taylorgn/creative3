@@ -16,7 +16,7 @@ firstApp.controller('controlOne', function($scope) {
   };
   $scope.answerYes = function() {
 
-          $scope.reply = 'Hit play begin!'; 
+          $scope.reply = 'Hit play to begin!'; 
           $scope.show2 = true;
     
      
@@ -35,7 +35,7 @@ firstApp.controller('controlOne', function($scope) {
 		 $scope.show4 = false;
 	   	 $scope.show5 = false;		
 		 $scope.show = false;
-                 $scope.show3 = true;
+         $scope.show3 = true;
 		
 	}
 

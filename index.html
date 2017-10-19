@@ -4,14 +4,15 @@
     <title>Cup Game</title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
-    <header>
+    
+  <body>
+      <header>
         <center>
             <br>
         <h1>Welcome to the Cup Game!</h1>
             <br>
         </center>
     </header>
-  <body>
       
     <div ng-controller="controlOne">
         <center>
@@ -20,10 +21,11 @@
       <button ng-click='start()' type='submit'>Submit</button>
       <br>
       {{message}}
+            
         <button ng-click='answerYes()' ng-show='show'>Yes!</button>
         <button ng-show='show' ng-click='answerNo()'>No</button>
         <br>
-        {{reply}}
+            <span id="reply">{{reply}}</span>
         <br>
         <br>
         <iframe  ng-show="show2" width="560" height="315" src="https://www.youtube.com/embed/9bto_3Z1dqc?start=3&amp;&rel=0&amp;controls=0&amp;showinfo=0&amp;start=3&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
@@ -43,8 +45,7 @@
     </div>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="code.js"></script>
-  </body>
-    <footer>
+        <footer>
         <br>
         <br>
         <center>
@@ -54,4 +55,5 @@
         <br>
         <br>
     </footer>
+  </body>
 </html>

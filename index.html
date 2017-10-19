@@ -1,9 +1,11 @@
 <!doctype html>
 <html ng-app="creative">
   <head>
-    <title>First AngularJS App</title>
+    <title>Cup Game</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
+      
     <div ng-controller="controlOne">
       <span>What is your name?</span>
       <input type="text" ng-model="one">
@@ -16,8 +18,7 @@
         {{reply}}
         <br>
         
-        
-        <iframe ng-show="show2" width="560" height="315" src="https://www.youtube.com/embed/9bto_3Z1dqc?rel=0&amp;showinfo=0&amp;start=3?&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        <iframe  ng-show="show2" width="560" height="315" src="https://www.youtube.com/embed/9bto_3Z1dqc?rel=0&amp;controls=0&amp;showinfo=0&amp;start=3&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
         <br>
 	<span ng-show="show2">Enter your selection here (A, B, or C):</span>
         <input  ng-model="answer" ng-show="show2" type="text">
